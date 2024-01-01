@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="alumni-slider.css" />
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Trocchi'/>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src="alumni-slider.js"></script>
+    
+    </head>
+
+    <body>
+        <div class="alumni-stories-slider">
+            <h2 class="stories-header">Alumni Stories</h2>
+            <div class="story-content">
+                <div class="slider-image">
+                   
+                    <div id ="story1-div" class="active-story">
+                        <a href="https://uncw.edu/news/2023/10/esports-lab" target= "_blank" rel="noopener">
+                            <img id="story1-image" class="story-image" src="example-images\esports-lab-grand-opening-20231010-bp15559-news.jpg"  href="https://uncw.edu/news/2023/10/esports-lab"/> 
+                        
+                            <div class="image-overlay"> 
+                                <p class="image-title">Esports Celebrates New Gaming Lab</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="story2-div" class="prev-active">
+                        <a href="https://uncw.edu/news/2023/05/generosity-of-sayeds" target= "_blank" rel="noopener">
+                            <img id="story2-image" class="story-image"src="example-images\yousry-linda-sayed-uncw-0008-news.jpg" href="https://uncw.edu/news/2023/05/generosity-of-sayeds"/>
+                        
+                            <div class="image-overlay"> 
+                                <p class="image-title">A Quality Connection</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id ="story3-div" class="image-stack">
+                        <a href="https://giving.uncw.edu/stories/scholarships-relationships-and-lives-impacted" target= "_blank" rel="noopener">
+                            <img id="story3-image" class="story-image" src="example-images\scholarshipdinner.jpg" href="https://giving.uncw.edu/stories/scholarships-relationships-and-lives-impacted"/>
+                        
+                            <div class="image-overlay"> 
+                                <p class="image-title">Scholarships, Relationships and Lives Impacted</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="story4-div" class="image-stack">
+                        <a href="https://giving.uncw.edu/stories/hawks-harvest-impact-story" target= "_blank" rel="noopener">
+                            <img id="story4-image" class="story-image" src="example-images\hawks-harvest-story-header.jpg" href="https://giving.uncw.edu/stories/hawks-harvest-impact-story"/>
+                        
+                            <div class="image-overlay"> 
+                                <p class="image-title">Employees Rise to the Challenge, Fight Students' Food Insecurity</p>
+                            </div>
+                        </a>
+                    </div>
+                  
+                </div>
+                
+                <div class="button-column">
+                    <div class="button-underlay">
+                    </div>
+                    <div class="button-overlay">
+                        <button id="story1" class="active-story-button" type="button" onclick="storyAction(this)" >Esports Celebrates New Gaming Lab</button>
+                        <button id="story2" class="story-button" type="button" onclick="storyAction(this)">A Quality Connection</button>
+                        <button id="story3" class="story-button" type="button" onclick="storyAction(this)">Scholarships, Relationships and Lives Impacted</button>
+                        <button id="story4" class="story-button" style="border:none" type="button" onclick="storyAction(this)">Employees Rise to the Challenge, Fight Students' Food Insecurity</button>
+                    </div>
+                    <div class="view-all-container">
+                        <a class="view-all-link" href="https://giving.uncw.edu/campaign/stories">
+                            <span class="view-all-span">
+                                <p class="view-all-text">View All</p>
+                                <svg class="view-all-arrow" xmlns="http://www.w3.org/2000/svg" height="34.352" viewBox="0 0 36.994 34.352" width="36.994" display="inline-block">
+                                    <path d="M26.709,16.277a1.318,1.318,0,0,0,0-1.865L18.318,6.022a1.318,1.318,0,1,0-1.865,1.865l7.458,7.458L16.454,22.8a1.318,1.318,0,0,0,1.865,1.865ZM6,16.663H25.777V14.027H6Z" data-name="Path 9775"  transform="translate(1.911 1.795)"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

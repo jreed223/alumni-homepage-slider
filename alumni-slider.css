@@ -1,0 +1,276 @@
+
+body {
+    margin:auto;
+}
+
+.alumni-stories-slider{
+    width: 80%;
+    margin: auto;
+    height:fit-content;
+}
+
+.stories-header{
+    font-family: 'Trocchi', serif;
+    font-size: 28px;
+    color: #00205C;
+    margin: 0 0 15px;
+}
+/* Main story content styling */
+.story-content{
+    display:flex;
+    width: 100%;
+}
+
+.slider-image:hover{
+    .image-title {
+        color: #dbeef0;
+    }    
+    .active-story  img{
+        transform: scale(1.35);
+    }
+}
+
+.active-story{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.prev-active{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.image-stack{
+    position: absolute;
+}
+
+.activate-animation{
+    animation: fade-in 2s;
+    opacity: 1;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Image styling */
+.slider-image{
+    height: 390px;
+    width: 55%;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-image{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.active-story  img{
+    transition: transform 1s;
+}
+
+.image-overlay{
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(0deg, rgba(0,32,92,1) 0%, rgba(0,212,255,0) 100%);
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.image-title{
+    font-family: 'Trocchi', serif;
+    font-size: 22px !important;
+    color: #FCC200;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0);
+    margin-left: 0 !important;
+}
+
+/* Story button styling */
+.button-column{
+    flex: 1;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.button-underlay{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 85%;
+    height: 83%;
+    background-color: #00205C;
+}
+
+.button-overlay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:5%;
+    left: 7%;
+    width: 85%;
+    height: 83%;
+}
+    
+.story-button{
+    font-family: 'Trocchi', serif;
+    color: white;
+    background-color: #008485;
+    padding: 5px 7%;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    transition: all 1s;
+    margin: 0;
+    border-radius: 0;
+}
+
+.active-story-button{
+    font-family: 'Trocchi', serif;
+    color: #FCC200;
+    background-color: #008485;
+    padding: 5px 7%;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 100%;
+    flex-grow: 1.5;
+    flex-basis: auto;
+    transition: all 1s;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* View All button styling */
+.view-all-container{
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+}
+
+.view-all-link{
+    text-decoration: none;
+}
+
+.view-all-link:hover{ 
+    .view-all-text{
+    color: #00205C;
+    }
+    .view-all-arrow{
+        background-color: #00205C;
+    }
+
+    .view-all-arrow path{
+        fill: rgb(255, 255, 255);
+    }
+}
+
+.view-all-span{
+    display: flex;
+}
+
+.view-all-text{
+    font-family: "Lato", sans-serif;
+    color: #008485;
+    font-weight: 900;
+    font-size: 125%;
+    margin: 0;
+    padding: 0 10px;
+    align-self: center;
+    white-space: nowrap;
+    margin-left: 0 !important;
+}
+.view-all-arrow{
+    background-color: #FCC200;
+    flex-shrink: 0;
+}
+
+.view-all-arrow path{
+    fill: rgba(0,32,92,1);
+}
+
+@media (max-width: 800px){
+  .alumni-stories-slider{
+    width: 100%;
+}
+
+    .stories-header{
+        margin-left: 2.5%;
+    }
+
+    .story-content{
+        display: block;
+        height: 600px;
+    }
+    
+    .slider-image{
+        max-height: 43%;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .image-title{
+        font-size: 24px;
+    }
+
+    .button-column{
+        margin-top: 3%;
+        height: 53%;
+    }
+
+    .story-button{
+        font-size: 16px;
+    }
+
+    .active-story-button{
+        font-size: 16px;
+    }
+
+    .button-underlay{
+        width:unset;
+        height: 85%;
+        right: 10%;
+        left: 10%; 
+    }
+
+    .button-overlay{
+        position: relative;
+        height: 75%;
+        width: 74%;
+        margin: 0 auto;
+        left: unset; 
+    }
+
+    .view-all-container{
+        top: 90%;
+        right: 10%
+    }
+}
+
