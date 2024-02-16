@@ -1,6 +1,6 @@
 # Alumni Story Slider
 
-A simple slider that displays a preiview of viewable content.
+A simple slider that displays a preview of viewable story content.
 
 ## Description
 
