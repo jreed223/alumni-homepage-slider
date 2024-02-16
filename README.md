@@ -8,11 +8,6 @@ Using HTML, CSS, & JavaScript I created a slider that utilizes on click function
 
 ## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
 ### Installing
 
 * Download the HTML, JavaScript & CSS files and save them in the same folder
