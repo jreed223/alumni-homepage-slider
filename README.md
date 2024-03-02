@@ -17,3 +17,5 @@ Using HTML, CSS, & JavaScript I created a slider that utilizes on click function
 * Open the HTML file using any browser
 * Make changes to the content by editing the HTML file
 * Make changes to the design by editing the CSS file
+
+![image](https://github.com/jreed223/alumni-homepage-slider/assets/110320578/4e67c2b2-537b-41d6-b498-92b99ed5c445)
